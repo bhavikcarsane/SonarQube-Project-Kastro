@@ -13,10 +13,9 @@ pipeline {
     }
 
     stages {
-
         stage('Git Checkout') {
             steps {
-                checkout scm
+                git branch: 'main', url: 'https://github.com/bhavikcarsane/SonarQube-Project-Kastro.git'
             }
         }
 
